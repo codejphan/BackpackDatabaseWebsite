@@ -243,3 +243,60 @@ function renderProducts(productArray) {
     )
     .join("");
 }
+
+// This section of code is when you search and filter using the sidebar. To narrow down the product items.
+function filterAndRender() {
+  const searchText = document.getElementById("searchInput").value.toLowerCase();
+  const selectedCategory = document.getElementById("categorySelect").value;
+  const selectedGender = document.getElementById("genderSelect").value;
+  const selectedcolor = document.getElementById("colorList").value;
+  const minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
+  const maxPrice =
+    parseFloat(document.getElementById("maxPrice").value) || Infinity;
+
+  const filtered = products.filter((product) => {
+    const matchesText = product.name.toLowerCase().includes(searchText);
+    const matchesCategory =
+      !selectedCategory || product.category === selectedCategory;
+    const matchesGender = !selectedGender || product.gender === selectedGender;
+    const matchescolor = !selectedcolor || product.color === selectedcolor;
+    const matchesPrice = product.price >= minPrice && product.price <= maxPrice;
+
+    return (
+      matchesText &&
+      matchesCategory &&
+      matchesGender &&
+      matchescolor &&
+      matchesPrice
+    );
+  });
+
+  renderProducts(filtered);
+}
+
+// Add event listeners for all filters
+[
+  "searchInput",
+  "categorySelect",
+  "genderSelect",
+  "colorList",
+  "minPrice",
+  "maxPrice",
+].forEach((id) => {
+  document.getElementById(id).addEventListener("input", filterAndRender);
+  document.getElementById(id).addEventListener("change", filterAndRender);
+});
+
+// Clear filters button
+document.getElementById("clearFilters").addEventListener("click", () => {
+  document.getElementById("searchInput").value = "";
+  document.getElementById("categorySelect").value = "";
+  document.getElementById("genderSelect").value = "";
+  document.getElementById("colorList").value = "";
+  document.getElementById("minPrice").value = "";
+  document.getElementById("maxPrice").value = "";
+  filterAndRender();
+});
+
+// Initial render
+renderProducts(products);
