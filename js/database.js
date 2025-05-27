@@ -220,3 +220,26 @@ const products = [
     300
   ),
 ];
+
+// Function to map objects into the html to fill product grid
+function renderProducts(productArray) {
+  const productGrid = document.getElementById("productGrid");
+  productGrid.innerHTML = productArray
+    .map(
+      (product) => `
+      <div class="col-md-4 my-4">
+        <div class="card h-100">
+          <img src="${product.image}" class="card-img-top" alt="${
+        product.name
+      }">
+          <div class="card-body">
+            <h5 class="card-title">${product.name}</h5>
+            <p class="card-text">$${product.price.toFixed(2)}</p>
+            <small class="text-muted">${product.description}</small>
+          </div>
+        </div>
+      </div>
+    `
+    )
+    .join("");
+}
