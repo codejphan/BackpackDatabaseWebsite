@@ -23,7 +23,7 @@ const products = [
                         it's the GLACIER 50's answer to getting the most out of
                         (or into) backpacking minimalism.`,
     "green",
-    300
+    300.0
   ),
   new Product(
     "Glacier 50",
@@ -34,7 +34,7 @@ const products = [
                         it's the GLACIER 50's answer to getting the most out of
                         (or into) backpacking minimalism.`,
     "grey",
-    300
+    280.0
   ),
   new Product(
     "Bridger 45",
@@ -46,7 +46,7 @@ const products = [
                         BRIDGER 45 was built to not just meet but exceed your
                         mission needs.`,
     "yellow",
-    300
+    325.0
   ),
   new Product(
     "Bridger 45",
@@ -58,7 +58,7 @@ const products = [
                         BRIDGER 45 was built to not just meet but exceed your
                         mission needs.`,
     "grey",
-    300
+    320.0
   ),
   new Product(
     "Popup 30",
@@ -70,7 +70,7 @@ const products = [
                         transforms into a first-rate meat hauler when it’s time
                         to pack out.`,
     "green",
-    300
+    450.0
   ),
   new Product(
     "Popup 30",
@@ -82,7 +82,7 @@ const products = [
                         transforms into a first-rate meat hauler when it’s time
                         to pack out.`,
     "camo",
-    300
+    480.0
   ),
   new Product(
     "Marshall 105",
@@ -93,7 +93,7 @@ const products = [
                         largest expedition pack—built to support your long-game
                         and to bag your big game.`,
     "grey",
-    300
+    600.0
   ),
   new Product(
     "Marshall 105",
@@ -104,7 +104,7 @@ const products = [
                         largest expedition pack—built to support your long-game
                         and to bag your big game.`,
     "camo",
-    300
+    600.0
   ),
   new Product(
     "Blackjack 100",
@@ -117,7 +117,7 @@ const products = [
                         Dyneema-CORDURA® laminate, IR-compliant zippers, and
                         lightweight bolsters.`,
     "tan",
-    300
+    450.0
   ),
   new Product(
     "Gunfighter 24",
@@ -127,7 +127,7 @@ const products = [
     `A low-profile, everyday pack that supplies the
                         mission-specific needs you require.`,
     "camo",
-    300
+    300.0
   ),
   new Product(
     "2 Day Assault",
@@ -139,7 +139,7 @@ const products = [
                         for your everyday urban missions. Its signature 3-ZIP
                         design provides ready access to the pack's contents.`,
     "black",
-    300
+    290.0
   ),
   new Product(
     "Catalyst 22",
@@ -150,7 +150,7 @@ const products = [
                         The CATALYST 22 can be used both in the office and on
                         the trail.`,
     "tan",
-    300
+    120.0
   ),
   new Product(
     "Catalyst 22",
@@ -161,7 +161,7 @@ const products = [
                         With its tough CORDURA® body, it’s ready for the
                         outdoors too.`,
     "green",
-    300
+    145.0
   ),
   new Product(
     "Fullmoon",
@@ -171,7 +171,7 @@ const products = [
     `Conveniently stash everything you want to keep easily
                         accessible, and then some.`,
     "pink",
-    300
+    80.0
   ),
   new Product(
     "District 18",
@@ -182,7 +182,7 @@ const products = [
                         DISTRICT 18 – hits home with easy access, detailed
                         organization, a laptop sleeve, and bottle pockets. `,
     "black",
-    300
+    220.0
   ),
   new Product(
     "Missiondopp",
@@ -194,7 +194,7 @@ const products = [
                         kit designed to hold everything you’ll need for a quick
                         getaway.`,
     "green",
-    300
+    40.0
   ),
   new Product(
     "Mission Control",
@@ -206,7 +206,7 @@ const products = [
                         of your electronic devices protected and easily
                         accessible when traveling.`,
     "black",
-    300
+    38.0
   ),
   new Product(
     "Hydrapak",
@@ -217,7 +217,7 @@ const products = [
                         Reservoir with an incorporated dust cover and the best
                         burst-strength in the business.`,
     "grey",
-    300
+    49.0
   ),
 ];
 
